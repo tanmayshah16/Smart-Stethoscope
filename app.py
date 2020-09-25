@@ -8,7 +8,7 @@ import numpy as np
 import os, fnmatch
 # Keras
 import librosa
-from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
@@ -21,8 +21,6 @@ SAMPLE_RATE = 16000
 # seconds
 MAX_SOUND_CLIP_DURATION=12  
 # Define a flask app
-from sklearn.model_selection import train_test_split
-from sklearn import preprocessing
 
 # Map label text to integer
 CLASSES = ['artifact','murmur','normal']
